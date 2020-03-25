@@ -1,11 +1,8 @@
 const express = require('express');
 
-const app = express();
+const routes = express.Router();
 
-app.use(express.json());
-
-
-app.post('/users', (request, response) => {
+routes.post('/ongs', (request, response) => {
     const params = request.body;
 
     console.log(params);
@@ -14,4 +11,5 @@ app.post('/users', (request, response) => {
         message: 'Hello world'
     });
 });
-app.listen(3333);
+
+module.exports = routes;
