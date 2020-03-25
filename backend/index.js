@@ -2,10 +2,16 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (request, response) => {
+app.use(express.json());
+
+
+app.post('/users', (request, response) => {
+    const params = request.body;
+
+    console.log(params);
+
     return response.json({
-        "message": "Hello World"
+        message: 'Hello world'
     });
 });
-
 app.listen(3333);
