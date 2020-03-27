@@ -1,11 +1,11 @@
-import React from 'react';
-import Header from './Header';
+import React, { useState } from 'react';
+import Logon from './pages/Logon';
+
+import './global.css';
 
 function App() {
   return (
-    <Header>
-      Semana Omnistack
-    </Header>
+    <Logon />
   );
 }
 
