@@ -7,8 +7,6 @@
 ### Backend
 * Node JS
 
-<hr>
-
 ### Frontend
 * HTML
 * CSS
